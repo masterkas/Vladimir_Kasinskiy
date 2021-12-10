@@ -1,0 +1,39 @@
+
+        body{
+            background-image: url("img/fon.png");
+            background-size: 100%;
+        }
+        div{
+            width: 135px;
+            height: 184px;
+            background-image: url("img/cards.png");
+            border-radius: 19px;
+            border: 1px solid #d3cd7d;
+            margin: 0px 20px 0px 0px;
+        }
+        .ten{
+            float: left;
+            background-position: 139px 1183px;
+        }
+        .dama{
+            float: left;
+            background-position: 139px 785px;
+        }
+        .nine{
+            float: left;
+            background-position: 283px 1183px;
+        }
+        .tuz{
+            float: left;
+            background-position: 426px 387px;
+        }
+        .joker{
+            float: left;
+            background-position: 283px 188px;
+        }
+        #marg{
+            margin: 0px 0px 0px -62px;
+        }
+        #marg_ten{
+            margin: 0px;
+        }
