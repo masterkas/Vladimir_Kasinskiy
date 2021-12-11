@@ -9,7 +9,7 @@
             background-image: url("img/cards.png");
             border-radius: 19px;
             border: 1px solid #d3cd7d;
-            margin: 0px 20px 0px 0px;
+            margin-left: 20px;
         }
         .ten{
             float: left;
@@ -31,9 +31,8 @@
             float: left;
             background-position: 283px 188px;
         }
-        #marg{
-            margin: 0px 0px 0px -62px;
+        .a{
+            margin-left: 62px;
         }
-        #marg_ten{
-            margin: 0px;
-        }
+       
+        
