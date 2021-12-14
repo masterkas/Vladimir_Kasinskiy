@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.cont {
+            
+            font-size: 24px; 
+            text-align: center;      
+        }
+
+        div.cont > div { 
+            width: 150px;
+            background-color: rgb(99, 124, 165);
+            border: solid rgb(88, 88, 141) 1px;
+            position: relative;
+            cursor: pointer;
+            float:left;
+            border-radius: 5px;
+        }
+        div.cont > div:hover {
+            background: rgb(231, 231, 238);
+            color: darkred;
+        }  
+        div.timetable { 
+            width: 150px; 
+            display: none; 
+        }
+        div.timetable > div { 
+            background-color: rgb(162, 167, 177); 
+            border: solid rgb(82, 82, 105) 1px; 
+            cursor: pointer; 
+            border-radius: 5px;
+            color: black;
+            
+        }
+          
+        div.timetable > div:hover {
+            background: rgb(231, 231, 238);
+            color: rgb(246, 12, 12);
+        }
+        div.cont > div:hover div.timetable { 
+            display: block; 
+            position: absolute; 
+            top: 100%; 
+            z-index: 1;
+        }
+        @media all and (max-width: 1080px){
+            div.cont > div { 
+                clear: both;
+            }  
+            div.cont > div:hover div.timetable {
+            left: 100%;
+            top: 0;
+            }
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+<div class='cont'>
+    <div>
+        понедельник
+        <div class='timetable'>
+            <div>завтрак</div>
+            <div>обед</div>
+            <div>ужин</div>
+        </div>
+    </div>
+    <div>
+        вторник
+        <div class='timetable'>
+            <div>завтрак</div>
+            <div>обед</div>
+            <div>ужин</div>
+        </div>
+    </div>
+    <div>
+        среда
+        <div class='timetable'>
+            <div>
+                завтрак</div>
+            <div>обед</div>
+            <div>ужин</div>
+        </div>
+    </div>
+    <div>
+        четверг
+        <div class='timetable'>
+            <div>завтрак</div>
+            <div>обед</div>
+            <div>ужин</div>
+        </div>
+    </div>
+    <div>
+        пятница
+        <div class='timetable'>
+            <div>завтрак</div>
+            <div>обед</div>
+            <div>ужин</div>
+        </div>
+    </div>
+    <div>
+        суббота
+        <div class='timetable'>
+            <div>завтрак</div>
+            <div>обед</div>
+            <div>ужин</div>
+        </div>
+    </div>
+    <div>
+        воскресенье
+        <div class='timetable'>
+            <div>завтрак</div>
+            <div>обед</div>
+            <div>ужин</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
