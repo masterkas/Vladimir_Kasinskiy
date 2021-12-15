@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>responsive navigation</title>
     <style>
         div.cont {
-            
             font-size: 24px; 
             text-align: center;      
         }
@@ -18,15 +17,27 @@
             position: relative;
             cursor: pointer;
             float:left;
+            color: blanchedalmond;
             border-radius: 5px;
+            transition: background-color 1s, color 1s;
+            
         }
         div.cont > div:hover {
-            background: rgb(231, 231, 238);
+            background-color: rgb(231, 231, 238);
             color: darkred;
         }  
         div.timetable { 
             width: 150px; 
-            display: none; 
+            
+            height: 0;
+            opacity: 0;
+           
+            left: 0;
+            width: 0;
+            transition: opacity 2s, top 600ms, left 600ms, width 2s, height 2s ;
+          
+            
+            
         }
         div.timetable > div { 
             background-color: rgb(162, 167, 177); 
@@ -34,7 +45,7 @@
             cursor: pointer; 
             border-radius: 5px;
             color: black;
-            
+            transition: background-color 1s, color 1s;
         }
           
         div.timetable > div:hover {
@@ -42,10 +53,12 @@
             color: rgb(246, 12, 12);
         }
         div.cont > div:hover div.timetable { 
-            display: block; 
+            display: block;
+            opacity: 1; 
             position: absolute; 
+            width: 100%;
             top: 100%; 
-            z-index: 1;
+            
         }
         @media all and (max-width: 1080px){
             div.cont > div { 
@@ -53,12 +66,8 @@
             }  
             div.cont > div:hover div.timetable {
             left: 100%;
-            top: 0;
+            top:-1px;
             }
-
-
-
-
         }
     </style>
 </head>
