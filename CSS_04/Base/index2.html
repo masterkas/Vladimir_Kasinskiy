@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таблица</title>
     <style>
- 
-        
-
         caption{
             caption-side: bottom;
         }
         tr td:first-child{
             font-weight: bold;
         }
-        th{
+        tr:first-child{
             background-color: gray;
         }
-        tr:nth-child(n+2){
-            background-color: rgb(182, 182, 182);
+        tr:nth-child(2n+3){
+            background-color: rgb(204, 204, 204);
         }
-
-        tr:hover {
-            background-color: lightslategray;
+        td{
+            border-bottom: dotted gray 2px;
+            border-right: dotted gray 2px;
+        }
+        tr td:last-child{
+            border-right: none;
+        }
+        tr:hover td{
+            background-color: rgb(4, 36, 75);
             color: rgb(197, 196, 158);
             cursor: pointer;
+            border-color: rgb(63, 108, 167);
+        
+        
+            
         }
-
-  
     </style>
 </head>
 <body>

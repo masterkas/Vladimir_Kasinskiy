@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsive navigation</title>
     <style>
-        div.cont {
+        .cont > div {
             font-size: 24px; 
-            text-align: center;      
-        }
-
-        div.cont > div { 
+            text-align: center;
             width: 150px;
+            height: 30px;
             background-color: rgb(99, 124, 165);
             border: solid rgb(88, 88, 141) 1px;
             position: relative;
@@ -19,56 +17,49 @@
             float:left;
             color: blanchedalmond;
             border-radius: 5px;
-            transition: background-color 2s, color 2s;
             
         }
-        div.cont > div:hover {
+        .cont > div:hover {
             background-color: rgb(231, 231, 238);
             color: darkred;
+            transition: background-color 2s, color 2s;
         }  
-        div.timetable { 
+        .timetable { 
             width: 150px; 
-            
-            height: 0;
-            opacity: 0;
-           
-            left: 0;
-            width: 0;
-            transition: opacity 2s, top 600ms, left 600ms, width 2s, height 2s ;
-          
-            
-            
+            position: absolute;
+            top: 100%;
         }
-        div.timetable > div { 
+        .timetable > div { 
             background-color: rgb(162, 167, 177); 
             border: solid rgb(82, 82, 105) 1px; 
-            cursor: pointer; 
             border-radius: 5px;
+            color: rgb(162, 167, 177);
+            height: 0;
+            opacity: 0;
+            font-size: 0px;
+            
+          }
+
+        .timetable > div:hover {
+            background: rgb(231, 231, 238 );
+            color: rgb(246, 12, 12 )!important;
+            
+        }
+        .cont > div:hover .timetable > div{
+            opacity: 1;
+            height: 30px;
+            font-size: 24px;
             color: black;
-            transition: background-color 2s, color 2s;
+            transition: height 2s, opacity 1.5s, font-size 2s, color 2s;
         }
-          
-        div.timetable > div:hover {
-            background: rgb(231, 231, 238);
-            color: rgb(246, 12, 12);
-            
-        }
-        div.cont > div:hover div.timetable { 
-            position: absolute; 
-            display: block;
-            opacity: 1; 
-            
-            width: 100%;
-            top: 100%; 
-            
-        }
+        
         @media all and (max-width: 1080px){
-            div.cont > div { 
+            .cont > div { 
                 clear: both;
             }  
-            div.cont > div:hover div.timetable {
-            left: 100%;
-            top:-1px;
+            .cont > div:hover .timetable {
+            left: 151px;
+            top: -1px;
             }
         }
     </style>
