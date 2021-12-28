@@ -459,7 +459,7 @@ textarea {
   height: auto; }
 
 .grid-margin-x {
-  margin-left: -0.625rem;
+  margin-left: 20rem;
   margin-right: -0.625rem; }
   @media print, screen and (min-width: 40em) {
     .grid-margin-x {
@@ -2177,6 +2177,7 @@ p,
 blockquote,
 th,
 td {
+ 
   margin: 0;
   padding: 0; }
 
@@ -2298,7 +2299,8 @@ dl {
   line-height: 1.6; }
 
 li {
-  font-size: inherit; }
+  font-size: inherit;
+   }
 
 ul {
   margin-left: 1.25rem;

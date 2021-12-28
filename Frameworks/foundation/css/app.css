@@ -1,0 +1,16 @@
+.grid-x>div:nth-child(even){
+color: rgb(0,174,216);
+}
+li{
+    margin-bottom: 0.75rem;
+}
+ul{
+    list-style: circle;
+}
+a{
+    text-decoration: underline;
+}
+.grid-x div:nth-child(n+2){
+    margin-top: 1em;
+
+}
