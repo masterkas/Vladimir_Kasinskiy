@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Проверка пароля</legend>
+            <label><input type="password" name="passw"  id="passw"><sup> * </sup>Пароль</label><br>
+            <label><input type="password" name="passw2"  id="passw2"><sup> * </sup>Повторите пароль</label><br><br>
+            <input type="submit" value="Отправить">
+ 
+        </fieldset>
+    </form>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+
+    <script>
+
+        $("#passw2").on("keyup", function() { 
+        
+            var value_input1 = $("#passw").val();
+            var value_input2 = $(this).val(); 
+            
+            if(value_input1 != value_input2) { 
+            
+                $("#passw").css("backgroundColor","red");
+                $("#passw2").css("backgroundColor","red"); 
+                
+                
+            } else { 
+            
+                $("#passw").css("backgroundColor","green");
+                $("#passw2").css("backgroundColor","green");
+                
+            }
+		
+	    });
+
+    </script>
+            
+    
+</body>
+</html>
